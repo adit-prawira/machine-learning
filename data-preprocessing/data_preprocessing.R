@@ -23,7 +23,7 @@ dataset$Purchased = factor(dataset$Purchased,
 
 # Splitting the dataset into training(80% observation) and 
 # test(20% observation) set with random factor of 1
-# install.packages("caTools)
+# install.packages("caTools")
 library(caTools)
 set.seed(123)
 
