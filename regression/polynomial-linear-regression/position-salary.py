@@ -58,3 +58,11 @@ plt.title("Truth or Bluff (Higher Resolution Higher Order Polynomial Regression)
 plt.xlabel("Position Level")
 plt.ylabel("Salary")
 plt.show()
+
+# Predicting Salary of position level (Linear regression)
+position_level = 6.5
+print(f"\nPrediction with Linear Regression of {position_level} position level: {lin_reg.predict([[position_level]])}\n")
+
+print(f"\nPrediction with Polynomial Regression of {position_level} position level: {lin_reg_2.predict(poly_reg.fit_transform([[6.5]]))}\n")
+
+print(f"\nPrediction with 4th Order Polynomial Regression of {position_level} position level: {lin_reg_4.predict(poly_reg_4.fit_transform([[6.5]]))}\n")
