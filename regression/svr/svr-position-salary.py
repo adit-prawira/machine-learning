@@ -23,9 +23,6 @@ regressor.fit(x, y)
 # Predict the result rescaled sc_x
 
 y_pred = regressor.predict(x)
-# print(x)
-# print(y)
-# print(pred)
 
 # Predicting Salary of position level 
 position_level = 6.5

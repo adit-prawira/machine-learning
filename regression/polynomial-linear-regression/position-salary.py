@@ -59,7 +59,7 @@ plt.xlabel("Position Level")
 plt.ylabel("Salary")
 plt.show()
 
-# Predicting Salary of position level (Linear regression)
+# Predicting Salary of position level 
 position_level = 6.5
 print(f"\nPrediction with Linear Regression of {position_level} position level: {lin_reg.predict([[position_level]])}\n")
 
