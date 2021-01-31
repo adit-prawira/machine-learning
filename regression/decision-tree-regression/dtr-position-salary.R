@@ -2,7 +2,8 @@ dataset = read.csv("Position_Salaries.csv")[2:3]
 
 library(rpart)
 regressor = rpart(formula = Salary ~ .,
-                data = dataset)
+                data = dataset,
+                control = rpart.control(minsplit = 1))
 #Predicting Salary of position level 
 position_level = 6.5
 y_pred = predict(regressor, data.frame(Level = position_level))
